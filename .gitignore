@@ -1,0 +1,42 @@
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build & Compilation (C++)
+build/
+bin/
+obj/
+*.o
+*.obj
+*.exe
+*.out
+*.app
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.cbp
+*.layout
+
+# Data and Logs
+data/logs/
+data/pcap_storage/
+data/backups/
+data/models/
+.env
+
+# OS and IDEs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
