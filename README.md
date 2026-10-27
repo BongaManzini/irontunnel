@@ -1,6 +1,9 @@
 # IronTunnel: Fast C++ Packet Sniffer & Python Defense Daemon 🛡️
 
-Hi! **IronTunnel** is a network security tool I built by unifying two of my projects: a fast C++ packet sniffer and a Python firewall self-healing daemon.
+> **Security Summit ITWeb Hackathon Project**  
+> **Challenge:** "Network Router Firewall and Management — A system that can be adopted into a live business."  
+> **Deliverable:** A network monitoring dashboard and automated defense system that manages and protects devices connected to an enterprise router.  
+> **Author:** Bonga Manzini (UNISA BSc Informatics Student)
 
 ---
 
