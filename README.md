@@ -1,8 +1,8 @@
-# IronTunnel: Fast C++ Packet Sniffer & Python Defense Daemon 🛡️
+# IronTunnel: Fast C++ Packet Sniffer & Python Defense Daemon ️
 
-> **Security Summit ITWeb Hackathon Project**  
-> **Challenge:** "Network Router Firewall and Management — A system that can be adopted into a live business."  
-> **Deliverable:** A network monitoring dashboard and automated defense system that manages and protects devices connected to an enterprise router.  
+> **Security Summit ITWeb Hackathon Project** 
+> **Challenge:** "Network Router Firewall and Management — A system that can be adopted into a live business." 
+> **Deliverable:** A network monitoring dashboard and automated defense system that manages and protects devices connected to an enterprise router. 
 > **Author:** Bonga Manzini (UNISA BSc Informatics Student)
 
 ---
@@ -21,19 +21,19 @@ I wanted to build a tool that does both:
 
 ```
 IronTunnel/
-├── packet_engine_cpp/            # Fast C++ packet sniffer using raw sockets & WinPcap
-│   ├── include/                  # Packet header definitions and structs
-│   ├── src/                      # Low-level sniffer and frame parser
-│   ├── CMakeLists.txt            # CMake build file
-│   └── main.cpp                  # Main entry point
+├── packet_engine_cpp/      # Fast C++ packet sniffer using raw sockets & WinPcap
+│  ├── include/         # Packet header definitions and structs
+│  ├── src/           # Low-level sniffer and frame parser
+│  ├── CMakeLists.txt      # CMake build file
+│  └── main.cpp         # Main entry point
 │
-├── autonomic_defense/            # Python threat detector and auto-firewall daemon
-│   ├── src/                      # Scapy flow analyzer and firewall blocker
-│   ├── scripts/                  # Setup automation
-│   ├── tests/                    # Unit and integration test suite
-│   └── requirements.txt          # Python dependencies
+├── autonomic_defense/      # Python threat detector and auto-firewall daemon
+│  ├── src/           # Scapy flow analyzer and firewall blocker
+│  ├── scripts/         # Setup automation
+│  ├── tests/          # Unit and integration test suite
+│  └── requirements.txt     # Python dependencies
 │
-└── README.md                     # This guide
+└── README.md           # This guide
 ```
 
 ---
@@ -44,13 +44,13 @@ IronTunnel/
 [Network Traffic]
        │
        ▼
-[C++ Packet Engine]  ──► Captures raw packets with zero lag using raw sockets
+[C++ Packet Engine] ──► Captures raw packets with zero lag using raw sockets
        │
        ▼
-[Python Daemon]      ──► Checks for attacks (ARP poisoning, SYN floods, rogue DHCP)
+[Python Daemon]   ──► Checks for attacks (ARP poisoning, SYN floods, rogue DHCP)
        │
        ▼  (Attack Detected!)
-[Firewall Action]    ──► Automatically runs: iptables -A INPUT -s <attacker_ip> -j DROP
+[Firewall Action]  ──► Automatically runs: iptables -A INPUT -s <attacker_ip> -j DROP
                          (The attacker is blocked in milliseconds!)
 ```
 
@@ -88,7 +88,7 @@ python3 src/main.py
 
 ---
 
-## 🤝 Contributing & Pull Requests
+## Contributing & Pull Requests
 
 Pull requests and issues are warmly welcomed!
 - Want to add a new attack detection signature or improve C++ socket handling?

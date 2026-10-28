@@ -22,7 +22,7 @@
     
     <div class="header-controls">
       <div id="os-platform-badge" class="platform-badge">
-        <span class="platform-icon">🖥️</span>
+        <span class="platform-icon">️</span>
         <span id="platform-text">Detecting OS...</span>
       </div>
       
@@ -84,7 +84,7 @@
       <div class="card kpi-card">
         <div class="card-header">
           <span class="card-title">INTRUSIONS REMEDIATED</span>
-          <span class="icon-accent">🛡️</span>
+          <span class="icon-accent">️</span>
         </div>
         <div class="kpi-value-row">
           <span id="total-healed-val" class="kpi-number green-text">0</span>
@@ -102,7 +102,7 @@
       <div class="card kpi-card">
         <div class="card-header">
           <span class="card-title">CONTAINED HOSTS / BLOCKED</span>
-          <span class="icon-accent">⛔</span>
+          <span class="icon-accent"></span>
         </div>
         <div class="kpi-value-row">
           <span id="blocked-count-val" class="kpi-number red-text">0</span>
@@ -120,7 +120,7 @@
       <div class="card kpi-card">
         <div class="card-header">
           <span class="card-title">NETWORK I/O THROUGHPUT</span>
-          <span class="icon-accent">⚡</span>
+          <span class="icon-accent"></span>
         </div>
         <div class="throughput-stats">
           <div class="t-stat">
@@ -172,7 +172,7 @@
 
         <div class="sim-buttons-grid">
           <button class="sim-btn btn-mitm" onclick="simulateAttack('mitm_attack')">
-            <span class="sim-btn-icon">⚡</span>
+            <span class="sim-btn-icon"></span>
             <div class="sim-btn-text">
               <strong>ARP Poisoning / MITM</strong>
               <small>Auto: Block + Flush ARP + Heal Gateway</small>
@@ -180,7 +180,7 @@
           </button>
 
           <button class="sim-btn btn-portscan" onclick="simulateAttack('port_scan')">
-            <span class="sim-btn-icon">🔍</span>
+            <span class="sim-btn-icon"></span>
             <div class="sim-btn-text">
               <strong>Port Scan Sweep</strong>
               <small>Auto: Firewall Drop + Port Lockdown</small>
@@ -188,7 +188,7 @@
           </button>
 
           <button class="sim-btn btn-dns" onclick="simulateAttack('dns_attack')">
-            <span class="sim-btn-icon">🌐</span>
+            <span class="sim-btn-icon"></span>
             <div class="sim-btn-text">
               <strong>DNS Poisoning</strong>
               <small>Auto: Flush DNS + Force 1.1.1.1 Safe Resolver</small>
@@ -196,7 +196,7 @@
           </button>
 
           <button class="sim-btn btn-malware" onclick="simulateAttack('malware')">
-            <span class="sim-btn-icon">☣</span>
+            <span class="sim-btn-icon"></span>
             <div class="sim-btn-text">
               <strong>Malware C2 Beacon</strong>
               <small>Auto: Kill PID + Block C2 + Host Quarantine</small>
@@ -204,7 +204,7 @@
           </button>
 
           <button class="sim-btn btn-exfil" onclick="simulateAttack('data_exfiltration')">
-            <span class="sim-btn-icon">📤</span>
+            <span class="sim-btn-icon"></span>
             <div class="sim-btn-text">
               <strong>Data Exfiltration Burst</strong>
               <small>Auto: Blackhole Remote IP + Restrict Host</small>
@@ -212,7 +212,7 @@
           </button>
 
           <button class="sim-btn btn-ddos" onclick="simulateAttack('ddos_flood')">
-            <span class="sim-btn-icon">🌊</span>
+            <span class="sim-btn-icon"></span>
             <div class="sim-btn-text">
               <strong>SYN / Connection Flood</strong>
               <small>Auto: Volumetric Firewall Drop</small>
@@ -229,11 +229,11 @@
     <!-- Tabs Container for Deep Inspection -->
     <section class="tabs-container card">
       <div class="tab-nav">
-        <button class="tab-btn active" onclick="switchTab('incidents-tab')">🚨 Live Security Incidents & Self-Healing Log</button>
-        <button class="tab-btn" onclick="switchTab('firewall-tab')">🧱 Firewall & Quarantine Tables</button>
-        <button class="tab-btn" onclick="switchTab('sockets-tab')">🔌 Network Sockets & Adapters</button>
-        <button class="tab-btn" onclick="switchTab('cpp-tab')">📡 C++ Monitor Sensor</button>
-        <button class="tab-btn" onclick="switchTab('tools-tab')">🛠️ Emergency Healing Tools</button>
+        <button class="tab-btn active" onclick="switchTab('incidents-tab')"> Live Security Incidents & Self-Healing Log</button>
+        <button class="tab-btn" onclick="switchTab('firewall-tab')"> Firewall & Quarantine Tables</button>
+        <button class="tab-btn" onclick="switchTab('sockets-tab')"> Network Sockets & Adapters</button>
+        <button class="tab-btn" onclick="switchTab('cpp-tab')"> C++ Monitor Sensor</button>
+        <button class="tab-btn" onclick="switchTab('tools-tab')">️ Emergency Healing Tools</button>
       </div>
 
       <!-- Tab 1: Incidents -->
@@ -362,7 +362,7 @@
           <div class="card kpi-card">
             <div class="card-header">
               <span class="card-title">PACKETS SNIFFED</span>
-              <span class="icon-accent">📦</span>
+              <span class="icon-accent"></span>
             </div>
             <div class="kpi-value-row">
               <span id="cpp-packets-val" class="kpi-number green-text">0</span>
@@ -376,7 +376,7 @@
           <div class="card kpi-card">
             <div class="card-header">
               <span class="card-title">C++ THREATS REPORTED</span>
-              <span class="icon-accent">⚠️</span>
+              <span class="icon-accent">️</span>
             </div>
             <div class="kpi-value-row">
               <span id="cpp-threats-val" class="kpi-number amber-text">0</span>
@@ -390,7 +390,7 @@
           <div class="card kpi-card">
             <div class="card-header">
               <span class="card-title">ACTIVE INTERFACE</span>
-              <span class="icon-accent">🌐</span>
+              <span class="icon-accent"></span>
             </div>
             <div class="kpi-value-row">
               <span id="cpp-iface-val" class="kpi-number cyan-text">eth0</span>
@@ -457,7 +457,7 @@
       <div id="tools-tab" class="tab-content">
         <div class="tools-grid">
           <div class="tool-card">
-            <div class="tool-icon">🌐</div>
+            <div class="tool-icon"></div>
             <div class="tool-content">
               <h4>Purge & Heal DNS Cache</h4>
               <p>Clears poisoned resolver caches and forces secure upstream resolution (Cloudflare 1.1.1.1 / Google 8.8.8.8).</p>
@@ -466,7 +466,7 @@
           </div>
 
           <div class="tool-card">
-            <div class="tool-icon">🔄</div>
+            <div class="tool-icon"></div>
             <div class="tool-content">
               <h4>Purge & Heal ARP Table</h4>
               <p>Flushes kernel neighbor tables (Linux `ip neigh flush` / Windows `arp -d *`) to stop MITM attacks.</p>
@@ -475,7 +475,7 @@
           </div>
 
           <div class="tool-card">
-            <div class="tool-icon">🔓</div>
+            <div class="tool-icon"></div>
             <div class="tool-content">
               <h4>Flush Firewall Drops</h4>
               <p>Unblocks all auto-quarantined malicious IPs and restores baseline firewall rules.</p>
@@ -484,7 +484,7 @@
           </div>
 
           <div class="tool-card">
-            <div class="tool-icon">🧪</div>
+            <div class="tool-icon"></div>
             <div class="tool-content">
               <h4>Terminate Process</h4>
               <p>Force kill a rogue backdoor or malicious socket by PID.</p>

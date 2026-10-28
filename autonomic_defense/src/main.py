@@ -21,7 +21,7 @@ from src.utils.logger import setup_logging
 def print_banner(config: Settings):
     banner = f"""
 ========================================================================
-    🛡️  AEGIS: Self-Healing Network Defense & Monitor System
+    ️  AEGIS: Self-Healing Network Defense & Monitor System
 ========================================================================
  [•] Operating System : {platform.system()} {platform.release()} ({platform.machine()})
  [•] Python Runtime   : {platform.python_version()}

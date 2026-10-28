@@ -1,10 +1,10 @@
-# 📡 AEGIS C++ Network Threat Monitor & Sensor Node
+# AEGIS C++ Network Threat Monitor & Sensor Node
 
 > **Cross-Platform C++17 Network Packet Sniffer, Intrusion Detection Sensor, and Autonomous Self-Healing Link for Linux and Windows.**
 
 ---
 
-## ✨ Features
+## Features
 
 - **Cross-Platform Core**: Natively compiles and runs on both **Linux** (GCC, Clang, Make, CMake) and **Windows** (MSVC, MinGW, Code::Blocks).
 - **Direct Integration with AEGIS Self-Healing Network**:
@@ -26,7 +26,7 @@
 
 ---
 
-## 🛠️ Build Instructions
+## ️ Build Instructions
 
 ### On Linux (Ubuntu, Debian, Fedora, Arch)
 
@@ -72,7 +72,7 @@ Open `Network Monitor App.cbp` in Code::Blocks and click **Build and Run** (`F9`
 
 ---
 
-## 🚀 Running the Monitor
+## Running the Monitor
 
 ### 1. Connect to Live AEGIS Self-Healing Network
 Start the AEGIS Self-Healing server first:
@@ -111,29 +111,29 @@ When running in interactive mode, use these hotkeys:
 
 ---
 
-## 🔗 Autonomous Self-Healing Integration Architecture
+## Autonomous Self-Healing Integration Architecture
 
 ```
-+------------------------------------+        REST / HTTP (JSON)        +----------------------------------------+
-|    C++ Network Monitor Sensor      |  =============================>  |   AEGIS Self-Healing Network (Python)  |
-|  (Linux & Windows Packet Sniffer)  |  POST /api/integrations/cpp-     |    (PolicyEngine & Cross-Platform OS)  |
-|                                    |       monitor/alert              |                                        |
-|  - Packet Capture (Live / Sim)     |                                  |  1. Ingests threat signal              |
-|  - Sliding-Window Port Scan        |  <=============================  |  2. Evaluates security policy          |
-|  - MITM & ARP Surge Detector       |   JSON Remediation Confirmation  |  3. Executes autonomous self-healing:  |
-|  - Real-time Bandwidth Tracking    |                                  |     • Drops attacker IP in iptables    |
-|                                    |  -----------------------------   |       or netsh advfirewall             |
-|  - Background Telemetry Thread     |   POST /telemetry (Heartbeat)    |     • Purges poisoned ARP cache        |
-|  - Dynamic In-Memory Blacklist     |  ----------------------------->  |     • Updates Health Score (0-100%)    |
-|                                    |                                  |                                        |
-|                                    |  <-----------------------------  |  4. Streams live telemetry to Web HUD  |
-|                                    |   GET /sync-rules (Firewall)     |     at http://localhost:5000           |
-+------------------------------------+                                  +----------------------------------------+
++------------------------------------+    REST / HTTP (JSON)    +----------------------------------------+
+|  C++ Network Monitor Sensor   | =============================> |  AEGIS Self-Healing Network (Python) |
+| (Linux & Windows Packet Sniffer) | POST /api/integrations/cpp-   |  (PolicyEngine & Cross-Platform OS) |
+|                  |    monitor/alert       |                    |
+| - Packet Capture (Live / Sim)   |                 | 1. Ingests threat signal       |
+| - Sliding-Window Port Scan    | <============================= | 2. Evaluates security policy     |
+| - MITM & ARP Surge Detector    |  JSON Remediation Confirmation | 3. Executes autonomous self-healing: |
+| - Real-time Bandwidth Tracking  |                 |   • Drops attacker IP in iptables  |
+|                  | -----------------------------  |    or netsh advfirewall       |
+| - Background Telemetry Thread   |  POST /telemetry (Heartbeat)  |   • Purges poisoned ARP cache    |
+| - Dynamic In-Memory Blacklist   | -----------------------------> |   • Updates Health Score (0-100%)  |
+|                  |                 |                    |
+|                  | <----------------------------- | 4. Streams live telemetry to Web HUD |
+|                  |  GET /sync-rules (Firewall)   |   at http://localhost:5000      |
++------------------------------------+                 +----------------------------------------+
 ```
 
 ---
 
-## 🧪 Unit Testing
+## Unit Testing
 
 Unit test suite covers heuristic sliding-window algorithms, blacklist sync, and REST connector serialization:
 
@@ -146,23 +146,23 @@ Expected Output:
 ```
 === Running Threat Detector Unit Test ===
 [TEST] Running test_blacklist...
-  ✓ test_blacklist PASSED
+   test_blacklist PASSED
 [TEST] Running test_port_scan...
-  ✓ test_port_scan PASSED
+   test_port_scan PASSED
 [TEST] Running test_mitm_detection...
-  ✓ test_mitm_detection PASSED
+   test_mitm_detection PASSED
 [TEST] Running test_bandwidth_anomaly...
-  ✓ test_bandwidth_anomaly PASSED
+   test_bandwidth_anomaly PASSED
 All ThreatDetector Tests PASSED (4/4)
 
 === Running Aegis Connector Unit Test ===
 [TEST] Running test_url_parsing...
-  ✓ test_url_parsing PASSED
+   test_url_parsing PASSED
 All AegisConnector Tests PASSED
 ```
 
 ---
 
-## 📄 License
+## License
 
 MIT License. Copyright (c) 2024–2026 AEGIS Contributors.

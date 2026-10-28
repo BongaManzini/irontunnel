@@ -97,7 +97,7 @@ cd Self-Healing-Network
 
 # Create and activate virtual environment
 python3 -m venv venv
-source venv/bin/activate    # On Windows: .\venv\Scripts\activate
+source venv/bin/activate  # On Windows: .\venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -112,7 +112,7 @@ python src/main.py
 Console Output:
 ```
 ========================================================================
-    🛡️  AEGIS: Self-Healing Network Defense & Monitor System
+    ️  AEGIS: Self-Healing Network Defense & Monitor System
 ========================================================================
  [•] Operating System : Linux / Windows
  [•] Python Runtime   : 3.12+
